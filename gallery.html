@@ -6,7 +6,14 @@
   <link rel="stylesheet" href="colorful.css" media="screen"/>
 </head>
 <body>
+  <!--script type = "text/javascript" src = "popUp.js"-->
   <script type = "text/javascript" src = "showPic.js"></script>
+  <script>
+  function popUp(winURL)
+  {
+    window.open(winURL,"popUp","width = 960 ,height = 480");
+  }
+  </script>
   <h1>Monkey.D.Bobo's Zone</s></h1>
   <ul>
     <li>
@@ -14,6 +21,9 @@
     </li>
     <li>
       <a href="SKT T1 K.jpg" onclick="showPic(this); return false;" title="lol pro team">SKT T1 K.</a>
+    </li>
+    <li>
+      <a href="http://www.baidu.com/" onclick = popUp(this.href););">example</a>
     </li>
       <!---在调用onclick方法的时候 链接的点击也会被默认调用，所以我们采用return false 来阻止页面链接的调用--->
     <img id = "placeholder" src="sunson.jpg" alt="My Image Gallery"/>
